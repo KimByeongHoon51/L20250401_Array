@@ -84,8 +84,8 @@ int main()
 	}*/
 
 	// 다중 배열(2중, 3중 더 가능. 하지만 2중까지만 쓸 것.)
-	// int Map[10] = { 1,1,1,1,1,1,1,1,1,1 };
-	int Map[10][10] =
+	// int Map[10] = { 1,1,1,1,1,1,1,1,1,1 }
+	/*int Map[10][10] =
 	{
 	{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 },
 	{ 1, 0, 0, 0, 0, 0, 0, 0, 0, 1 },
@@ -99,6 +99,16 @@ int main()
 	{ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }
 	};
 
+	for (int i = 0; i < 10; ++i)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			for (int k = 0; k < 10; k++)
+			{
+
+			}
+		}
+	}
 	for (int y = 0; y < 10; ++y)
 	{
 		for (int x = 0; x < 10; ++x)
@@ -106,6 +116,106 @@ int main()
 			cout << Map[y][x];
 		}
 		cout << endl;
+	}*/
+
+
+	 // *
+	 // **
+	 // ***
+	 // ****
+	 // *****
+
+	// int MaxCount = 0;
+	// cin >> MaxCount;
+	// // 게임에서는 입력을 받게 되면 예외 처리를 한다.
+	//for (int i = 0; i < MaxCount; ++i)
+	//{
+	//	for (int j = 0; j <= i; ++j)
+	//	{
+	//		cout << "*";
+	//	}
+	//	cout << endl;
+	//}
+
+	//// ***** 
+	//// ****
+	//// ***
+	//// **
+	//// *
+	//for (int i = 0; i < MaxCount; ++i)
+	//{
+	//	for (int j = 0; j < MaxCount - i; ++j)
+	//	{
+	//		cout << "*";
+	//	}
+	//	cout << endl;
+	//}
+
+	//// *****
+	////  ****
+	////   ***
+	////    **
+	////     *
+
+	//for (int i = 0; i < MaxCount; ++i)
+	//{
+	//	for (int k = 0; k < i; k++)
+	//	{
+	//		cout << " ";
+	//	}
+	//	
+	//	for (int j = 0; j < MaxCount - i; ++j)
+	//	{
+	//		cout << "*";
+	//	}
+	//	cout << endl;
+	//}
+
+
+	////     *
+	////    **
+	////   ***
+	////  ****
+	//// *****
+	//for (int i = 0; i < MaxCount; ++i)
+	//{
+	//	for (int j = 0; j < MaxCount - i; ++j)
+	//	{
+	//		cout << " ";
+	//	}
+	//	
+
+	//	for (int k = 0; k < i; k++)
+	//	{
+	//		cout << "*";
+	//	}
+	//	cout << endl;
+	//}
+	
+	// 초기화
+	float Color = 0;
+	int Apple = 0;
+	int Goblin = 0;
+	char Alphabet = 'A';
+	bool Condition = true;
+	bool bIsFinish = false;
+	bool IsRunning = true;
+
+	char Key = 0;
+	for (; IsRunning;) // while (IsRunning) 도 같은 기능을 한다.
+	{
+		// Input
+		cin >> Key;
+
+		// Process
+		if (Key == 'Q') // 대문자 Q를 누르면 프로그램 종료
+		{
+			IsRunning = false;
+		}
+
+		// Render
+		cout << "사진찍자" << endl;
 	}
+
 	return 0;
 }
